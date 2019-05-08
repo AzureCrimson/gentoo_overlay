@@ -21,6 +21,7 @@ IUSE="alsa dbus inotify mpd mpris timezone wifi with_weather with_uvmeter xft xp
 RDEPEND=">=dev-haskell/http-4000.2.4:=
 	>=dev-haskell/mtl-2.1:= <dev-haskell/mtl-2.3:=
 	dev-haskell/async:=
+	dev-haskell/parsec-numbers:=
 	dev-haskell/old-locale:=
 	>=dev-haskell/parsec-3.1:= <dev-haskell/parsec-3.2:=
 	dev-haskell/regex-compat:=
