@@ -50,8 +50,6 @@ DEPEND="${RDEPEND}
 	>=dev-haskell/cabal-1.18.1.3
 "
 
-PATCHES=("${FILESDIR}"/${P}-noxpm.patch)
-
 src_prepare() {
 	default
 	# xmobar is an idle multithreaded program
