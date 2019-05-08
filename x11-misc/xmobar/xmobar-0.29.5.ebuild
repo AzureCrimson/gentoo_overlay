@@ -93,5 +93,5 @@ src_configure() {
 src_install() {
 	cabal_src_install
 
-	dodoc samples/xmobar.config readme.md news.md
+	dodoc examples/xmobar.config readme.md
 }
