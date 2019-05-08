@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>azurecrimson</name>
+		<description>test ebuilds by azurecrimson</description>
+		<homepage>https://github.com/azurecrimson/gentoo_overlay</homepage>
+		<owner>
+			<email>overlay_ac@azurecrimson.com</email>
+			<name>Azure Crimson</name>
+		</owner>
+		<source type="git">git://github.com/azurecrimson/gentoo_overlay.git</source>
+		<source type="git">https://github.com/azurecrimson/gentoo_overlay.git</source>
+		<feed>https://github.com/feeds/azurecrimson/commits/gentoo_overlay/master</feed>
+	</repo>
+</repositories>
