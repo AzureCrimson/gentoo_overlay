@@ -9,7 +9,7 @@
 		<flag name="mpd">Support mpd plugin</flag>
 		<flag name="mpris">Enables MPRIS v1, v2  support</flag>
 		<flag name="timezone">Enables localized date support</flag>
-		<flag name="with_conduit">Use conduit to fetch weather data.</flag>
+		<flag name="with_weather">Plugin to show weather data.</flag>
 		<flag name="with_uvmeter">Plugin to show UV data for Australia.</flag>
 	</use>
 	<longdescription>

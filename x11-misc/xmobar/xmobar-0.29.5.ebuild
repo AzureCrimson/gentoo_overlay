@@ -1,4 +1,4 @@
-# Copyright 1999-2016 Gentoo Foundation
+# Copyright 1999-2019 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=6
@@ -16,29 +16,32 @@ SRC_URI="mirror://hackage/packages/archive/${PN}/${PV}/${P}.tar.gz"
 LICENSE="BSD"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
-IUSE="alsa dbus inotify mpd mpris timezone wifi with_conduit with_uvmeter xft xpm"
+IUSE="alsa dbus inotify mpd mpris timezone wifi with_weather with_uvmeter xft xpm"
 
 RDEPEND=">=dev-haskell/http-4000.2.4:=
 	>=dev-haskell/mtl-2.1:= <dev-haskell/mtl-2.3:=
+	dev-haskell/async:=
 	dev-haskell/old-locale:=
 	>=dev-haskell/parsec-3.1:= <dev-haskell/parsec-3.2:=
 	dev-haskell/regex-compat:=
-	>=dev-haskell/stm-2.3:= <dev-haskell/stm-2.5:=
+	>=dev-haskell/stm-2.3:= <dev-haskell/stm-2.6:=
 	>=dev-haskell/utf8-string-0.3:= <dev-haskell/utf8-string-1.1:=
 	>=dev-haskell/x11-1.6.1:=
-	>=dev-lang/ghc-7.8.2:=
+	>=dev-lang/ghc-8.0.2:=
 	x11-libs/libXrandr
 	x11-libs/libXrender
 	alsa? ( >=dev-haskell/alsa-core-0.5:= <dev-haskell/alsa-core-0.6:=
-		>dev-haskell/alsa-mixer-0.2.0.2:= )
+			>=dev-haskell/alsa-mixer-0.3:= <dev-haskell/alsa-mixer-0.4:= )
 	dbus? ( >=dev-haskell/dbus-0.10:= )
-	inotify? ( >=dev-haskell/hinotify-0.3:= <dev-haskell/hinotify-0.4:= )
-	mpd? ( >=dev-haskell/libmpd-0.9:= <dev-haskell/libmpd-0.10:= )
+	inotify? ( >=dev-haskell/hinotify-0.3:= <dev-haskell/hinotify-0.5:= )
+	mpd? ( >=dev-haskell/libmpd-0.9.0.6:= <dev-haskell/libmpd-0.10:= )
 	mpris? ( >=dev-haskell/dbus-0.10:= )
 	timezone? ( >=dev-haskell/timezone-olson-0.1:= <dev-haskell/timezone-olson-0.2:=
 			>=dev-haskell/timezone-series-0.1:= <dev-haskell/timezone-series-0.2:= )
 	wifi? ( net-wireless/wireless-tools )
-	with_conduit? ( dev-haskell/http-conduit:=
+	with_weather? ( dev-haskell/http-conduit:=
+			dev-haskell/http-types:= )
+	with_uvmeter? ( dev-haskell/http-conduit:=
 			dev-haskell/http-types:= )
 	xft? ( >=dev-haskell/x11-xft-0.2:= <dev-haskell/x11-xft-0.4:= )
 	xpm? ( x11-libs/libXpm )
@@ -73,7 +76,7 @@ src_configure() {
 	haskell-cabal_src_configure \
 		--flag=-all_extensions \
 		$(cabal_flag alsa with_alsa) \
-		$(cabal_flag with_conduit with_conduit) \
+		$(cabal_flag with_weather with_weather) \
 		$(cabal_flag timezone with_datezone) \
 		$(cabal_flag dbus with_dbus) \
 		$(cabal_flag inotify with_inotify) \
