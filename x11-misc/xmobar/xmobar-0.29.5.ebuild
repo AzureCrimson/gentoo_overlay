@@ -39,7 +39,8 @@ RDEPEND=">=dev-haskell/http-4000.2.4:=
 	mpris? ( >=dev-haskell/dbus-0.10:= )
 	timezone? ( >=dev-haskell/timezone-olson-0.1:= <dev-haskell/timezone-olson-0.2:=
 			>=dev-haskell/timezone-series-0.1:= <dev-haskell/timezone-series-0.2:= )
-	wifi? ( net-wireless/wireless-tools )
+	wifi? ( net-wireless/wireless-tools
+			dev-haskell/iwlib:= )
 	with_weather? ( dev-haskell/http-conduit:=
 			dev-haskell/http-types:= )
 	with_uvmeter? ( dev-haskell/http-conduit:=
