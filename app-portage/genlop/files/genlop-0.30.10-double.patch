@@ -1,0 +1,13 @@
+diff --git a/genlop b/genlop
+index 44fa4d9..b351178 100755
+--- a/genlop
++++ b/genlop
+@@ -699,7 +699,7 @@ sub current()
+ 	# not check for sanity and have users check their FEATURES instead.
+ 	my @targets      = ();
+ 	my @sandbox_pids = ();
+-	my @sandbox_procs = qx{ps ax -o pid,args | tail -n +2 | sed -e's/^ *//' | grep ' sandbox ' | grep -v ' grep '};
++	my @sandbox_procs = qx{ps ax -o pid,args | tail -n +2 | sed -e's/^ *//' | grep ' sandbox ' | grep -v ' grep ' | grep -v 'pid-ns-init'};
+ 	my ($e_curmerge, $e_lastmerge);
+ 	foreach (@sandbox_procs)
+ 	{
