@@ -29,6 +29,7 @@ RDEPEND="
 	>=x11-libs/libnotify-0.7.7:0
 	>=app-crypt/libsecret-0.18.5:0[crypt]
 	>=x11-libs/libXScrnSaver-1.2.2-r1:0
+	dev-libs/nss
 "
 
 QA_PRESTRIPPED="opt/${PN}/code"
@@ -52,4 +53,9 @@ src_install() {
 	dosym "${EPREFIX}/opt/${PN}/bin/code" "/usr/bin/${EXEC_NAME}"
 	make_desktop_entry "${EXEC_NAME}" "Visual Studio Code" "${PN}" "Development;IDE"
 	newicon "${S}/resources/app/resources/linux/code.png" "${PN}.png"
+}
+
+pkg_postinst() {
+	elog "You may install some additional utils, so check them in:"
+	elog "https://code.visualstudio.com/Docs/setup#_additional-tools"
 }
