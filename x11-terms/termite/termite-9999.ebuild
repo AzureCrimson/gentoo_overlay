@@ -18,6 +18,10 @@ RDEPEND="
 	x11-terms/vte-ng
 "
 
+PATCHES=(
+	"${FILESDIR}/${PN}_remap-font-size-change.patch"
+)
+
 src_prepare() {
 	default
 	sed -i /-s /d Makefile
