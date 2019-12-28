@@ -19,7 +19,7 @@ RDEPEND="
 "
 
 PATCHES=(
-	"${FILESDIR}/${PN}_remap-font-size-change.patch"
+	"${FILESDIR}/${P}_remap-font-size-change.patch"
 )
 
 src_prepare() {
