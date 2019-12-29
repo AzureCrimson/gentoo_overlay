@@ -1,0 +1,2 @@
+sci-electronics/prjtrellis
+dev-embedded/openocd
