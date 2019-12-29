@@ -1,0 +1,14 @@
+2019-12-29 00:26:53,613 - creating container
+2019-12-29 00:26:53,721 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 00:27:04,538 - creating container
+2019-12-29 00:27:04,568 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 00:27:27,312 - creating container
+2019-12-29 00:33:43,685 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 03:47:49,905 - creating container
+2019-12-29 03:47:51,633 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 03:51:17,382 - creating container
+2019-12-29 03:51:19,046 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 04:05:34,566 - creating container
+2019-12-29 04:05:39,164 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
+2019-12-29 04:10:11,263 - creating container
+2019-12-29 04:10:17,244 - creating docker container with: docker create --tty --cap-add SYS_ADMIN --device /dev/fuse --storage-opt size=50G --workdir /root --volume /usr/portage:/usr/portage --volume /usr/portage/distfiles:/usr/portage/distfiles --volume=/tmp/gentoo_overlay:/var/lib/overlays/gentoo_overlay gentoo/stage3-amd64
