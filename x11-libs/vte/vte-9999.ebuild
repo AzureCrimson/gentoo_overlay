@@ -8,7 +8,7 @@ inherit git-r3 autotools vala
 DESCRIPTION="An enhanced terminal emulator widget"
 HOMEPAGE="https://github.com/thestinger/vte-ng"
 LICENSE="LGPL-2.1"
-SLOT="0"
+SLOT="2.91"
 EGIT_REPO_URI="https://github.com/thestinger/vte-ng"
 
 KEYWORDS="~amd64 ~x86"
