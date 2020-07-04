@@ -15,7 +15,7 @@ LICENSE="MIT"
 KEYWORDS="~amd64 ~x86"
 
 RDEPEND="
-	x11-terms/vte-ng
+	x11-libs/vte
 "
 
 PATCHES=(
